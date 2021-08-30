@@ -218,9 +218,9 @@ public class Controlador extends HttpServlet {
                     for (int i = 0; i < items.size(); i++) {
                         FileItem fileItem = (FileItem) items.get(i);
                         if(!fileItem.isFormField()){
-                            File file=new File("C:\\xampp\\htdocs\\productos"+fileItem.getName());
+                            File file=new File("C:\\xampp\\htdocs\\carrito"+fileItem.getName());
                             fileItem.write(file);
-                            p.setImagen("C:\\productos"+fileItem.getName());
+                            p.setImagen("http://localhost:8080/CarritoCompras"+fileItem.getName());
                         }else{
                             pro.add(fileItem.getString());                            
                         }

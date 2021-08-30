@@ -1,7 +1,7 @@
 
 <%@page import="java.text.DateFormat"%>
 <%@page import="java.util.Locale"%>
-<%@page import="com.alexander.config.Fecha"%>
+<%@page import="com.progra.config.Fecha"%>
 <%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
